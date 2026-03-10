@@ -1,0 +1,38 @@
+{
+    "name": "psc-acme/worker-catalog",
+    "description": "Package worker-catalog for psc-acme organization",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\WorkerCatalog\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.3",
+        "symfony/cache": "^7.0",
+        "laravel/framework": "^11.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.0",
+        "webforge/object-asserter": "^2.0.0",
+        "phpunit/phpunit": "^10.5"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
